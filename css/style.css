@@ -1,0 +1,22 @@
+/* Custom styles */
+/*
+helloasir
+03 July  2021
+*/
+body { 
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font: 32px/1em  serif;
+  color: black;
+  text-align: center;
+  padding: 10px
+}
+.container{
+  background-color: yellow;
+}
+hr{
+  height: 5px;
+  border-radius: 2px;
+  background-color: black;
+}
