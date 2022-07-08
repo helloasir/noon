@@ -1,1 +1,60 @@
-(function(_0x3466fb,_0x1862a6){var _0x56ac14=_0x285b,_0x33fd18=_0x3466fb();while(!![]){try{var _0x116876=-parseInt(_0x56ac14(0x9f))/0x1*(parseInt(_0x56ac14(0xa3))/0x2)+-parseInt(_0x56ac14(0xad))/0x3+-parseInt(_0x56ac14(0x94))/0x4+-parseInt(_0x56ac14(0x9e))/0x5*(parseInt(_0x56ac14(0x99))/0x6)+parseInt(_0x56ac14(0xab))/0x7+parseInt(_0x56ac14(0x91))/0x8+-parseInt(_0x56ac14(0xae))/0x9*(-parseInt(_0x56ac14(0xa7))/0xa);if(_0x116876===_0x1862a6)break;else _0x33fd18['push'](_0x33fd18['shift']());}catch(_0xb151ec){_0x33fd18['push'](_0x33fd18['shift']());}}}(_0x566b,0x9afb1));var CsvToHtmlTable=CsvToHtmlTable||{};function _0x285b(_0xbd7eca,_0x2c9b70){var _0x566b0f=_0x566b();return _0x285b=function(_0x285b03,_0x445d5c){_0x285b03=_0x285b03-0x91;var _0x4478e0=_0x566b0f[_0x285b03];return _0x4478e0;},_0x285b(_0xbd7eca,_0x2c9b70);}function _0x566b(){var _0x416565=['-table\x27></table>','element','length','6779668LzgAet','csv','393978fPSGZH','1440fqWaMv','get','\x27><i\x20class=\x27glyphicon\x20glyphicon-download\x27></i>\x20Download\x20as\x20CSV</a></p>','<p><a\x20class=\x27btn\x20btn-info\x27\x20href=\x27','6016160YYYNyP','when','toArrays','1876508ezQgVl','csv_options','empty','<thead></thead>','text','30606iNzYRG','<tbody></tbody>','<tr></tr>','each','table-container','630RncpJx','37382vyTkVh','csv_path','<th></th>','append','44Akkigb','datatables_options','custom_formatting','DataTable','61240LcqTDe'];_0x566b=function(){return _0x416565;};return _0x566b();}CsvToHtmlTable={'init':function(_0x30736c){var _0x3cbd85=_0x285b;_0x30736c=_0x30736c||{};var _0x3898df=_0x30736c[_0x3cbd85(0xa0)]||'',_0x317061=_0x30736c[_0x3cbd85(0xa9)]||_0x3cbd85(0x9d),_0x15530e=_0x30736c['allow_download']||![],_0x378579=_0x30736c[_0x3cbd85(0x95)]||{},_0x381475=_0x30736c[_0x3cbd85(0xa4)]||{},_0x4a5237=_0x30736c[_0x3cbd85(0xa5)]||[],_0x3dcc5b={};$[_0x3cbd85(0x9c)](_0x4a5237,function(_0xf683ac,_0x49c983){var _0x4485c3=_0x49c983[0x0],_0x4210e7=_0x49c983[0x1];_0x3dcc5b[_0x4485c3]=_0x4210e7;});var _0x2c5ff3=$('<table\x20class=\x27table\x20table-striped\x20table-condensed\x27\x20id=\x27'+_0x317061+_0x3cbd85(0xa8)),_0x407b25=$('#'+_0x317061);_0x407b25[_0x3cbd85(0x96)]()[_0x3cbd85(0xa2)](_0x2c5ff3),$[_0x3cbd85(0x92)]($[_0x3cbd85(0xaf)](_0x3898df))['then'](function(_0x48ddf0){var _0x18f9dd=_0x3cbd85,_0x5c902a=$[_0x18f9dd(0xac)][_0x18f9dd(0x93)](_0x48ddf0,_0x378579),_0x4087be=$(_0x18f9dd(0x97)),_0x41d55f=_0x5c902a[0x0],_0x37203d=$('<tr></tr>');for(var _0x3a7c6e=0x0;_0x3a7c6e<_0x41d55f[_0x18f9dd(0xaa)];_0x3a7c6e++){_0x37203d[_0x18f9dd(0xa2)]($(_0x18f9dd(0xa1))[_0x18f9dd(0x98)](_0x41d55f[_0x3a7c6e]));}_0x4087be[_0x18f9dd(0xa2)](_0x37203d),_0x2c5ff3[_0x18f9dd(0xa2)](_0x4087be);var _0x17276f=$(_0x18f9dd(0x9a));for(var _0x430826=0x1;_0x430826<_0x5c902a['length'];_0x430826++){var _0x396034=$(_0x18f9dd(0x9b));for(var _0x222468=0x0;_0x222468<_0x5c902a[_0x430826]['length'];_0x222468++){var _0x2576c7=$('<td></td>'),_0x5eb509=_0x3dcc5b[_0x222468];_0x5eb509?_0x2576c7['html'](_0x5eb509(_0x5c902a[_0x430826][_0x222468])):_0x2576c7[_0x18f9dd(0x98)](_0x5c902a[_0x430826][_0x222468]),_0x396034[_0x18f9dd(0xa2)](_0x2576c7),_0x17276f['append'](_0x396034);}}_0x2c5ff3['append'](_0x17276f),_0x2c5ff3[_0x18f9dd(0xa6)](_0x381475),_0x15530e&&_0x407b25[_0x18f9dd(0xa2)](_0x18f9dd(0xb1)+_0x3898df+_0x18f9dd(0xb0));});}};
+var CsvToHtmlTable = CsvToHtmlTable || {};
+
+CsvToHtmlTable = {
+    init: function (options) {
+        options = options || {};
+        var csv_path = options.csv_path || "";
+        var el = options.element || "table-container";
+        var allow_download = options.allow_download || false;
+        var csv_options = options.csv_options || {};
+        var datatables_options = options.datatables_options || {};
+        var custom_formatting = options.custom_formatting || [];
+        var customTemplates = {};
+        $.each(custom_formatting, function (i, v) {
+            var colIdx = v[0];
+            var func = v[1];
+            customTemplates[colIdx] = func;
+        });
+
+        var $table = $("<table class='table table-striped table-condensed' id='" + el + "-table'></table>");
+        var $containerElement = $("#" + el);
+        $containerElement.empty().append($table);
+
+        $.when($.get(csv_path)).then(
+            function (data) {
+                var csvData = $.csv.toArrays(data, csv_options);
+                var $tableHead = $("<thead></thead>");
+                var csvHeaderRow = csvData[0];
+                var $tableHeadRow = $("<tr></tr>");
+                for (var headerIdx = 0; headerIdx < csvHeaderRow.length; headerIdx++) {
+                    $tableHeadRow.append($("<th></th>").text(csvHeaderRow[headerIdx]));
+                }
+                $tableHead.append($tableHeadRow);
+
+                $table.append($tableHead);
+                var $tableBody = $("<tbody></tbody>");
+
+                for (var rowIdx = 1; rowIdx < csvData.length; rowIdx++) {
+                    var $tableBodyRow = $("<tr></tr>");
+                    for (var colIdx = 0; colIdx < csvData[rowIdx].length; colIdx++) {
+                        var $tableBodyRowTd = $("<td></td>");
+                        var cellTemplateFunc = customTemplates[colIdx];
+                        if (cellTemplateFunc) {
+                            $tableBodyRowTd.html(cellTemplateFunc(csvData[rowIdx][colIdx]));
+                        } else {
+                            $tableBodyRowTd.text(csvData[rowIdx][colIdx]);
+                        }
+                        $tableBodyRow.append($tableBodyRowTd);
+                        $tableBody.append($tableBodyRow);
+                    }
+                }
+                $table.append($tableBody);
+
+                $table.DataTable(datatables_options);
+
+                if (allow_download) {
+                    $containerElement.append("<p><a class='btn btn-info' href='" + csv_path + "'><i class='glyphicon glyphicon-download'></i> Download as CSV</a></p>");
+                }
+            });
+    }
+};
