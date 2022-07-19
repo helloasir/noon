@@ -1,6 +1,6 @@
 function format_link(link) {
     if (link)
-        return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+        return "<a href='"+ "https://www.noon.com/uae-en/" + link + "/p/" +"' target='_blank'>" + link  +"</a>";
     else return "";
 }
 
