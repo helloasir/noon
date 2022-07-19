@@ -1,0 +1,60 @@
+{
+	"fields": [
+		{
+			"name": "Web_link-href",
+			"title": "Web_link-href",
+			"constraints": {
+				"required": true,
+				"type": "http://www.w3.org/2001/XMLSchema#anyURI"
+			}
+		},
+		{
+			"name": "Noon SKU",
+			"title": "Noon SKU",
+			"constraints": {
+				"required": true,
+				"type": "http://www.w3.org/2001/XMLSchema#string"
+			}
+		},
+		{
+			"name": "Product_Name",
+			"title": "Product_Name",
+			"constraints": {
+				"required": true,
+				"type": "http://www.w3.org/2001/XMLSchema#string"
+			}
+		},
+		{
+			"name": "Brand_Name",
+			"title": "Brand_Name",
+			"constraints": {
+				"required": true,
+				"type": "http://www.w3.org/2001/XMLSchema#string"
+			}
+		},
+		{
+			"name": "Buy_Price",
+			"title": "Buy_Price",
+			"constraints": {
+				"required": true,
+				"type": "http://www.w3.org/2001/XMLSchema#string"
+			}
+		},
+		{
+			"name": "Low_Price",
+			"title": "Low_Price",
+			"constraints": {
+				"required": true,
+				"type": "http://www.w3.org/2001/XMLSchema#string"
+			}
+		},
+		{
+			"name": "Sold_By",
+			"title": "Sold_By",
+			"constraints": {
+				"required": true,
+				"type": "http://www.w3.org/2001/XMLSchema#string"
+			}
+		}
+	]
+}
