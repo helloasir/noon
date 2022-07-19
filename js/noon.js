@@ -7,7 +7,7 @@ function format_link(link) {
 CsvToHtmlTable.init({
     csv_path: "data/noontop.csv",
     element: "table",
-    allow_download: true,
+    allow_download: false,
     csv_options: {
         separator: ",",
         delimiter: '"'
